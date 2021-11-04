@@ -1,0 +1,135 @@
+---
+title: "Divide y vencerás"
+subtitle: "de {polAr} al 'polArverse'"
+author: "@TuQmano"
+institute: ""
+date: "10-12 de noviembre de 2021"
+output:
+  xaringan::moon_reader:
+    seal: false
+    css: ["footer-header.css", "latinR.css"]
+---
+
+layout: true
+  
+  
+<div class="my-footer"><span>Juan Pablo Ruiz Nicolini | @TuQmano | www.tuqmano.ar</span></div> 
+
+
+```{r xaringan, include=FALSE}
+xaringanExtra::use_xaringan_extra(c("tile_view", "extra_styles", "scribble", "webcam"))
+```
+
+```{r extrasXaringan, echo=FALSE}
+
+xaringanExtra::use_extra_styles(
+  hover_code_line = TRUE,         
+  mute_unhighlighted_code = TRUE  
+)
+
+```
+
+```{r progress, echo = FALSE}
+
+xaringanExtra::use_progress_bar(color = "white", location = "top")
+
+```
+
+```{r xaringan-logo, echo=FALSE}
+xaringanExtra::use_logo("https://github.com/PoliticaArgentina/data_warehouse/raw/master/hex/polArverse.png", width = "100px")
+```
+
+---
+class: center, hide_logo
+
+background-image: url(https://github.com/PoliticaArgentina/data_warehouse/raw/master/hex/polArverse.png?raw=true), url(https://github.com/electorArg/polAr/raw/master/hex/hex-polAr.png?raw=true), url(LatinR_LOGOS-21.png)
+background-position: 60% 50% , 40% 50%, 50% 74%
+background-size: 20%, 16%, 15%
+
+## "Divide y vencerás"
+### de `{polAr}` al _polArverse_
+
+#### 10 - 13 de noviembre, 2021 
+
+
+
+
+---
+
+class: hide_logo
+
+background-image: url(https://github.com/TuQmano/latinr2020/raw/master/slides/polAr/polar_slides_files/img-manual/hw.PNG)
+background-position: 60% 50% 
+background-size: 40%
+
+
+
+### JUAN PABLO RUIZ NICOLINI
+
+#### Politólogo - Universidad Torcuato Di Tella (Buenos Aires - Argentina)
+
+#### [`r icon::fa("globe")`](https://www.tuqmano.com/) [tuqmano.com](https://www.tuqmano.com/) 
+
+#### [`r icon::fa("twitter")`](https://twitter.com/TuQmano)  [TuQmano](https://twitter.com/TuQmano) 
+
+#### [`r icon::fa("github")`](https://github.com/tuqmano) [TuQmano](https://github.com/tuqmano)
+
+---
+
+class: hide_logo, inverse
+
+# Divide y Vencerás
+
+## Hoja de Ruta
+
+--
+
+###  1. LatinR y polAr - una historia de `r emo::ji("heart")`
+
+--
+
+###  2. `r emo::ji("package")`{polAr}
+
+--
+
+### 3. El _polArverse_ `r emo::ji("stars")` 
+
+
+---
+
+class: inverse
+
+# LatinR
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/watch?v=UYvSv8StDa8&t=10872s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+---
+
+
+class: inverse
+
+# polAr
+
+---
+
+
+
+
+# polArverse
+
+---
+
+# polArverse
+
+* `{elecotAr}`
+
+* `{legislAr}`
+
+* `{discursAr}`
+
+* `{geoAr}`
+
+* `{opinAr}`
+

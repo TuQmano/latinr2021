@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Divide y vencerás</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="@TuQmano" />
+    <script src="polArverse_latinR2021_files/header-attrs-2.9/header-attrs.js"></script>
+    <link href="polArverse_latinR2021_files/tile-view-0.2.6/tile-view.css" rel="stylesheet" />
+    <script src="polArverse_latinR2021_files/tile-view-0.2.6/tile-view.js"></script>
+    <script src="polArverse_latinR2021_files/xaringanExtra-webcam-0.0.1/webcam.js"></script>
+    <script id="xaringanExtra-webcam-options" type="application/json">{"width":"200","height":"200","margin":"1em"}</script>
+    <script src="polArverse_latinR2021_files/fabric-4.3.1/fabric.min.js"></script>
+    <link href="polArverse_latinR2021_files/xaringanExtra-scribble-0.0.1/scribble.css" rel="stylesheet" />
+    <script src="polArverse_latinR2021_files/xaringanExtra-scribble-0.0.1/scribble.js"></script>
+    <script>document.addEventListener('DOMContentLoaded', function() { window.xeScribble = new Scribble({"pen_color":["#FF0000"],"pen_size":3,"eraser_size":30,"palette":[]}) })</script>
+    <link href="polArverse_latinR2021_files/xaringanExtra-extra-styles-0.2.6/xaringanExtra-extra-styles.css" rel="stylesheet" />
+    <script src="polArverse_latinR2021_files/xaringanExtra-progressBar-0.0.1/progress-bar.js"></script>
+    <link href="polArverse_latinR2021_files/font-awesome-5.3.1/css/fontawesome-all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="footer-header.css" type="text/css" />
+    <link rel="stylesheet" href="latinR.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+
+
+layout: true
+  
+  
+&lt;div class="my-footer"&gt;&lt;span&gt;Juan Pablo Ruiz Nicolini | @TuQmano | www.tuqmano.ar&lt;/span&gt;&lt;/div&gt; 
+
+
+
+
+
+
+<style>.xe__progress-bar__container {
+  top:0;
+  opacity: 1;
+  position:absolute;
+  right:0;
+  left: 0;
+}
+.xe__progress-bar {
+  height: 0.25em;
+  background-color: white;
+  width: calc(var(--slide-current) / var(--slide-total) * 100%);
+}
+.remark-visible .xe__progress-bar {
+  animation: xe__progress-bar__wipe 200ms forwards;
+  animation-timing-function: cubic-bezier(.86,0,.07,1);
+}
+@keyframes xe__progress-bar__wipe {
+  0% { width: calc(var(--slide-previous) / var(--slide-total) * 100%); }
+  100% { width: calc(var(--slide-current) / var(--slide-total) * 100%); }
+}</style>
+
+<div>
+<style type="text/css">.xaringan-extra-logo {
+width: 100px;
+height: 128px;
+z-index: 0;
+background-image: url(https://github.com/PoliticaArgentina/data_warehouse/raw/master/hex/polArverse.png);
+background-size: contain;
+background-repeat: no-repeat;
+position: absolute;
+top:1em;right:1em;
+}
+</style>
+<script>(function () {
+  let tries = 0
+  function addLogo () {
+    if (typeof slideshow === 'undefined') {
+      tries += 1
+      if (tries < 10) {
+        setTimeout(addLogo, 100)
+      }
+    } else {
+      document.querySelectorAll('.remark-slide-content:not(.title-slide):not(.inverse):not(.hide_logo)')
+        .forEach(function (slide) {
+          const logo = document.createElement('div')
+          logo.classList = 'xaringan-extra-logo'
+          logo.href = null
+          slide.appendChild(logo)
+        })
+    }
+  }
+  document.addEventListener('DOMContentLoaded', addLogo)
+})()</script>
+</div>
+
+---
+class: center, hide_logo
+
+background-image: url(https://github.com/PoliticaArgentina/data_warehouse/raw/master/hex/polArverse.png?raw=true), url(https://github.com/electorArg/polAr/raw/master/hex/hex-polAr.png?raw=true), url(LatinR_LOGOS-21.png)
+background-position: 60% 50% , 40% 50%, 50% 74%
+background-size: 20%, 16%, 15%
+
+## "Divide y vencerás"
+### de `{polAr}` al _polArverse_
+
+#### 10 - 13 de noviembre, 2021 
+
+
+
+
+---
+
+class: hide_logo
+
+background-image: url(https://github.com/TuQmano/latinr2020/raw/master/slides/polAr/polar_slides_files/img-manual/hw.PNG)
+background-position: 60% 50% 
+background-size: 40%
+
+
+
+### JUAN PABLO RUIZ NICOLINI
+
+#### Politólogo - Universidad Torcuato Di Tella (Buenos Aires - Argentina)
+
+#### [<i class="fas  fa-globe "></i>](https://www.tuqmano.com/) [tuqmano.com](https://www.tuqmano.com/) 
+
+#### [<i class="fab  fa-twitter "></i>](https://twitter.com/TuQmano)  [TuQmano](https://twitter.com/TuQmano) 
+
+#### [<i class="fab  fa-github "></i>](https://github.com/tuqmano) [TuQmano](https://github.com/tuqmano)
+
+---
+
+class: hide_logo, inverse
+
+# Divide y Vencerás
+
+## Hoja de Ruta
+
+--
+
+###  1. LatinR y polAr - una historia de ❤️
+
+--
+
+###  2. 📦{polAr}
+
+--
+
+### 3. El _polArverse_ 🌠 
+
+
+---
+
+class: inverse
+
+# LatinR
+
+
+&lt;iframe width="560" height="315" src="https://www.youtube.com/watch?v=UYvSv8StDa8&amp;t=10872s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
+
+
+---
+
+
+class: inverse
+
+# polAr
+
+---
+
+
+
+
+# polArverse
+
+---
+
+# polArverse
+
+* `{elecotAr}`
+
+* `{legislAr}`
+
+* `{discursAr}`
+
+* `{geoAr}`
+
+* `{opinAr}`
+
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create();
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
